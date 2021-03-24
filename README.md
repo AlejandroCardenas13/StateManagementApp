@@ -7,6 +7,12 @@ It's a simple app where I try somes patterns and ways to have better handling of
 - StatefulWidgets and Callback 🚴🏼‍
 - BloC and Notifier ✈️
 - BloC and Streams 🚀
+- Providers with ChangeNotifier 🏋️‍
+- Providers with Streams 👨‍💻
+- Asynchronous requests with BLoC and Providers 🎮
+- Repaint multiple widgets using BLoC and Providers 🧟‍
+- Flutter Demo: provider & flutter_bloc ‍🏭
+- WeatherFlut al 100% | Flutter Challenge! 🎲
 
 ## Pre requirements 👀 
 - Visual Studio Code 1.50.0 v onwards or Android Studio 4.0v onwards
