@@ -1,0 +1,42 @@
+{
+  "namesApp": "Best ways to implements a good State Management",
+  "routes": [
+    {
+      "route": "stateful_callback",
+      "text": "StatefulWidgets and Callback \uD83D\uDEB4\uD83C\uDFFC\u200D"
+    },
+    {
+      "route": "bc_notifier",
+      "text": "BloC and Notifier ✈️"
+    },
+    {
+      "route": "bc_streams",
+      "text": "BloC and Streams \uD83D\uDE80"
+    },
+    {
+      "route": "prov_change_notifier",
+      "text": "Providers with ChangeNotifier \uD83C\uDFCB"
+    },
+    {
+      "route": "prov_streams",
+      "text": "Providers with Streams \uD83D\uDC68\u200D\uD83D\uDCBB"
+    },
+    {
+      "route": "asyn_bloc_providers",
+      "text": "Asynchronous requests with BLoC and Providers \uD83C\uDFAE"
+    },
+    {
+      "route": "multiple_bloc_providers",
+      "text": "Repaint multiple widgets using BLoC and Providers \uD83E\uDDDF\u200D"
+    },
+    {
+      "route": "provider_flutter_bloc",
+      "text": "Flutter Demo: provider & flutter_bloc \u200D\uD83C\uDFED"
+    },
+    {
+      "route": "challenge",
+      "icon": "list",
+      "text": "WeatherFlut to 100% | Flutter Challenge! \uD83C\uDFB2"
+    }
+  ]
+}
