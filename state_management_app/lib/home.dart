@@ -4,23 +4,36 @@ import 'package:state_management_app/utils/options_provider.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    bool _isDark = false;
     final _screenSize = MediaQuery.of(context).size;
-    return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text('State Management'),
+    return Theme(
+      data: _isDark ? ThemeData.dark() : ThemeData.light(),
+      child: Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Text('State Management'),
+          ),
+          actions: [
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [IconButton(icon: Icon(Icons.check), onPressed: () {})],
+            ),
+          ],
         ),
+        body: _list(_screenSize),
       ),
-      body: _list(_screenSize),
     );
   }
+
+  void changeTheme() {}
 
   Widget _list(Size screenSize) {
     final double sizeWidth = screenSize.width * 0.03;
     final double sizeHeight = screenSize.height * 0.01;
 
     return Container(
-      padding: EdgeInsets.symmetric(vertical: sizeHeight,horizontal: sizeWidth),
+      padding:
+          EdgeInsets.symmetric(vertical: sizeHeight, horizontal: sizeWidth),
       child: FutureBuilder(
         future: optionsProvider.loadData(),
         initialData: [],
