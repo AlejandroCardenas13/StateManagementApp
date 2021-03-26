@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class StatefulWithCallBack extends StatelessWidget {
+class ProvidersWithStreams extends StatelessWidget {
   @override
   Widget build(BuildContext context) => SamplePage(
-        title: 'StatefulWidget with Callback',
-      );
+    title: 'Providers with Streams',
+  );
 }
 
 class SamplePage extends StatefulWidget {

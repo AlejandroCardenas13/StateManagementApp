@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class StatefulWithCallBack extends StatelessWidget {
+class ProvidersWithChangeNotifier extends StatelessWidget {
   @override
   Widget build(BuildContext context) => SamplePage(
-        title: 'StatefulWidget with Callback',
+        title: 'Providers with Change Notifier',
       );
 }
 

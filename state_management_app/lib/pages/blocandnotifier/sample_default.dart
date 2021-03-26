@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class StatefulWithCallBack extends StatelessWidget {
+class BloCWithNotifier extends StatelessWidget {
   @override
   Widget build(BuildContext context) => SamplePage(
-        title: 'StatefulWidget with Callback',
-      );
+    title: 'BloC with Notifier',
+  );
 }
 
 class SamplePage extends StatefulWidget {
