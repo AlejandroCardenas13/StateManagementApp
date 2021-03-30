@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'sample_bloc_stream_buttons.dart';
 
-
 //En este caso el patrón sigue siendo el mismo, el BloC para separar la lógica pero esta vez por medio de los StreamControllers vamos a controlar los valores a mostrar en los Widgets
 class SampleStreams {
   final _controllerCounter = new StreamController<int>();
@@ -12,11 +11,9 @@ class SampleStreams {
   bool _isDark = false;
 
 //  Function(int) get getCounterSink => _controllerCounter.sink.add; En que caso usaria el Sink?
-
   Stream<int> get getCounterStream => _controllerCounter.stream;
 
   //Function(bool) get getThemeSink => _controllerTheme.sink.add;
-
   Stream<bool> get getThemeStream => _controllerTheme.stream;
 
   void incrementCounter() {
@@ -44,6 +41,7 @@ class SamplePage extends StatelessWidget {
   SamplePage({Key key, this.title}) : super(key: key);
   final String title;
   final SampleStreams streamBloC = new SampleStreams();
+
   //El StreamBuilder va a estar escuchando al stream del tipo que hallamos definido en la clase de la lógica y a partir de este vamos a poder jugar con los valores del snapshot
   @override
   Widget build(BuildContext context) {

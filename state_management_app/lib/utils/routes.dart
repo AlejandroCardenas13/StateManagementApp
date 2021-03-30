@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:state_management_app/home.dart';
 import 'package:state_management_app/pages/blocandnotifier/sample_bloc_notifier.dart';
 import 'package:state_management_app/pages/blocandstreams/sample_bloc_streams.dart';
-import 'package:state_management_app/pages/providerswithchangenotifier/sample_default.dart';
+import 'package:state_management_app/pages/providerswithchangenotifier/sample_provider_change_notifier.dart';
 import 'package:state_management_app/pages/providerswithstreams/sample_default.dart';
 import 'package:state_management_app/pages/statefulwithcallback/sample_default.dart';
 
@@ -11,7 +11,7 @@ Map<String, WidgetBuilder> getRoutes() => <String, WidgetBuilder>{
       'stateful_callback': (context) => StatefulWithCallBack(),
       'bc_notifier': (context) => SampleBloCNotifier(),
       'bc_streams': (context) => SampleBloCStreams(),
-      'prov_change_notifier': (context) => ProvidersWithChangeNotifier(),
+      'prov_change_notifier': (context) => SampleProvidersWithChangeNotifier(),
       'prov_streams': (context) => ProvidersWithStreams(),
       'asyn_bloc_providers': (context) => HomePage(),
       'multiple_bloc_providers': (context) => HomePage(),
