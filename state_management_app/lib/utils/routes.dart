@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:state_management_app/home.dart';
+import 'package:state_management_app/pages/asynchtonousrequests/async_calls.dart';
 import 'package:state_management_app/pages/blocandnotifier/sample_bloc_notifier.dart';
 import 'package:state_management_app/pages/blocandstreams/sample_bloc_streams.dart';
 import 'package:state_management_app/pages/providerswithchangenotifier/sample_provider_change_notifier.dart';
@@ -13,7 +14,7 @@ Map<String, WidgetBuilder> getRoutes() => <String, WidgetBuilder>{
       'bc_streams': (context) => SampleBloCStreams(),
       'prov_change_notifier': (context) => SampleProvidersWithChangeNotifier(),
       'prov_streams': (context) => SampleProviderWithStreams(),
-      'asyn_bloc_providers': (context) => HomePage(),
+      'asyn_bloc_providers': (context) => AsyncCalls(),
       'multiple_bloc_providers': (context) => HomePage(),
       'provider_flutter_bloc': (context) => HomePage(),
       'challenge': (context) => HomePage(),

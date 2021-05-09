@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:state_management_app/home.dart';
+import 'package:state_management_app/pages/asynchtonousrequests/album_provider.dart';
 import 'package:state_management_app/pages/providerswithchangenotifier/sample_provider_change_notifier.dart';
 import 'package:state_management_app/pages/providerswithstreams/sample_provider_streams.dart';
 import 'package:state_management_app/utils/routes.dart';
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
             create: (_) => provider.getCounterStream, initialData: 0),
         StreamProvider(
             create: (_) => provider.getThemeStream, initialData: false),
-        ChangeNotifierProvider(create: (_) => SampleProviderNotifier())
+        ChangeNotifierProvider(create: (_) => SampleProviderNotifier()),
+        ChangeNotifierProvider(create: (_) => AlbumProvider()..getAlbums()),
       ],
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
